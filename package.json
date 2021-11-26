@@ -1,0 +1,21 @@
+{
+  "name": "eslint-config-dasprid",
+  "version": "0.1.0",
+  "description": "ESLint config for DASPRiD's coding style",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "author": "Ben Scholzen 'DASPRiD' <mail@dasprids.de>",
+  "license": "BSD-2-Clause",
+  "peerDependencies": {
+    "eslint": ">=8"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-prefer-arrow": "^1.2.3"
+  }
+}
