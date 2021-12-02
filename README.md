@@ -47,7 +47,8 @@ Your `tsconfig.json` must contain the following settings:
 {
     "compilerOptions": {
         "noImplicitAny": true,
-        "strictNullChecks": true
+        "strictNullChecks": true,
+        "importsNotUsedAsValues": "error"
     }
 }
 ```

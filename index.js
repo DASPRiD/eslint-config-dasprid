@@ -107,7 +107,11 @@ module.exports = {
         ],
         '@typescript-eslint/quotes': ['error', 'single', {avoidEscape: true}],
         '@typescript-eslint/semi': ['error', 'always'],
-        '@typescript-eslint/space-before-function-paren': ['error', 'always'],
+        '@typescript-eslint/space-before-function-paren': ['error', {
+            anonymous: 'always',
+            named: 'never',
+            asyncArrow: 'always',
+        }],
         '@typescript-eslint/space-infix-ops': ['error'],
 
         // TypeScript

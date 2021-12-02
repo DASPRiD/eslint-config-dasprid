@@ -1,5 +1,7 @@
 {
     "compilerOptions": {
-        "strictNullChecks": true
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "importsNotUsedAsValues": "error"
     }
 }
