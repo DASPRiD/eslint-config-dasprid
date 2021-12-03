@@ -140,12 +140,6 @@ module.exports = {
                 format: ['camelCase'],
             },
             {
-                selector: 'variable',
-                types: ['boolean'],
-                format: ['camelCase'],
-                prefix: ['is', 'should', 'has', 'can', 'did', 'will'],
-            },
-            {
                 selector: 'typeLike',
                 format: ['PascalCase'],
             },
