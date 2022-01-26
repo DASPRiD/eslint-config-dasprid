@@ -25,5 +25,24 @@ module.exports = {
             beforeSelfClosing: 'never',
             beforeClosing: 'never',
         }],
+        '@typescript-eslint/naming-convention': [
+            'error',
+            {
+                selector: 'default',
+                format: ['camelCase'],
+            },
+            {
+                selector: 'variable',
+                format: ['camelCase', 'PascalCase'],
+            },
+            {
+                selector: 'typeLike',
+                format: ['PascalCase'],
+            },
+            {
+                selector: 'objectLiteralProperty',
+                format: null,
+            },
+        ],
     },
 };
