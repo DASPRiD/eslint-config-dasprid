@@ -101,7 +101,12 @@ module.exports = {
         '@typescript-eslint/comma-dangle': ['error', 'always-multiline'],
         '@typescript-eslint/comma-spacing': ['error', {before: false, after: true}],
         '@typescript-eslint/func-call-spacing': ['error', 'never'],
-        '@typescript-eslint/indent': ['error', 4, {SwitchCase: 1}],
+        '@typescript-eslint/indent': ['error', 4, {
+            SwitchCase: 1,
+            ignoreNodes: [
+                'TSTypeParameterInstantiation', // Broken
+            ],
+        }],
         '@typescript-eslint/keyword-spacing': ['error', {before: true, after: true}],
         '@typescript-eslint/no-empty-function': ['error'],
         '@typescript-eslint/no-extra-parens': ['error', 'functions'],
