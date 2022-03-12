@@ -32,7 +32,11 @@ module.exports = {
                 format: ['camelCase'],
             },
             {
-                selector: 'variable',
+                selector: 'variableLike',
+                format: ['camelCase', 'PascalCase'],
+            },
+            {
+                selector: 'property',
                 format: ['camelCase', 'PascalCase'],
             },
             {
