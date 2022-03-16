@@ -67,7 +67,7 @@ module.exports = {
                     arguments: false,
                 },
             },
-        ]
+        ],
         'no-multi-spaces': ['error'],
         'no-multiple-empty-lines': ['error', {max: 1, maxEOF: 0, maxBOF: 0}],
         'no-tabs': ['error'],
