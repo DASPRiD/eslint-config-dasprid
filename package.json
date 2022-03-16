@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-dasprid",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Strict ESLint configuration for TypeScript projects",
   "main": "index.js",
   "scripts": {
