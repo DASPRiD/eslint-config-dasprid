@@ -56,6 +56,18 @@ module.exports = {
         }],
         'multiline-ternary': ['error', 'always-multiline'],
         'new-parens': ['error', 'always'],
+        '@typescript-eslint/no-misused-promises': [
+            'error',
+            {
+                'checksVoidReturn': {
+                    // There are cases where this is valid, e.g. in order to use async functions in event handlers.
+                    // When doing so, it should be made sure though to handle all possible errors within the event
+                    // handler!
+                    attributes: false,
+                    arguments: false,
+                },
+            },
+        ]
         'no-multi-spaces': ['error'],
         'no-multiple-empty-lines': ['error', {max: 1, maxEOF: 0, maxBOF: 0}],
         'no-tabs': ['error'],
