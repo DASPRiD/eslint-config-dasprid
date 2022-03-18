@@ -181,7 +181,9 @@ module.exports = {
         '@typescript-eslint/no-unnecessary-boolean-literal-compare': ['error'],
         '@typescript-eslint/no-unnecessary-condition': ['error'],
         '@typescript-eslint/no-unnecessary-type-arguments': ['error'],
-        '@typescript-eslint/no-unused-vars': ['error'],
+        '@typescript-eslint/no-unused-vars': ['error', {
+            ignoreRestSiblings: true,
+        }],
         '@typescript-eslint/prefer-for-of': ['error'],
         '@typescript-eslint/prefer-includes': ['error'],
         '@typescript-eslint/prefer-nullish-coalescing': ['error'],
