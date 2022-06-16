@@ -203,6 +203,12 @@ module.exports = {
                 after: true,
             },
         ],
+        '@typescript-eslint/unbound-method': [
+            'error',
+            {
+                ignoreStatic: true,
+            },
+        ],
     },
     overrides: [
         {
