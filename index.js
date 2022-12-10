@@ -120,7 +120,9 @@ module.exports = {
             ],
         }],
         '@typescript-eslint/keyword-spacing': ['error', {before: true, after: true}],
-        '@typescript-eslint/no-empty-function': ['error'],
+        '@typescript-eslint/no-empty-function': ['error', {
+            allow: ['private-constructors', 'protected-constructors', 'decoratedFunctions'],
+        }],
         '@typescript-eslint/no-extra-parens': ['error', 'functions'],
         '@typescript-eslint/no-throw-literal': ['error'],
         '@typescript-eslint/no-use-before-define': ['error'],
