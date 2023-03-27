@@ -22,6 +22,7 @@ module.exports = {
         },
         'import/resolver': {
             typescript: {},
+            exports: {},
         },
     },
     rules: {
