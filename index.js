@@ -6,7 +6,7 @@ module.exports = {
     plugins: [
         '@typescript-eslint',
         'prefer-arrow',
-        'import',
+        'i',
     ],
     extends: [
         'eslint:recommended',
