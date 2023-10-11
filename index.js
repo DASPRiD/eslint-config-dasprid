@@ -10,15 +10,15 @@ module.exports = {
     ],
     extends: [
         'eslint:recommended',
-        'plugin:import/errors',
-        'plugin:import/warnings',
-        'plugin:import/typescript',
+        'plugin:i/errors',
+        'plugin:i/warnings',
+        'plugin:i/typescript',
         'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
     ],
     settings: {
         'import/parsers': {
-            "@typescript-eslint/parser": ['.ts', '.tsx'],
+            '@typescript-eslint/parser': ['.ts', '.tsx'],
         },
         'import/resolver': {
             typescript: {},
@@ -117,7 +117,8 @@ module.exports = {
         '@typescript-eslint/indent': ['error', 4, {
             SwitchCase: 1,
             ignoredNodes: [
-                'TSTypeParameterInstantiation', // Broken
+                // Broken
+                'TSTypeParameterInstantiation',
             ],
         }],
         '@typescript-eslint/keyword-spacing': ['error', {before: true, after: true}],
